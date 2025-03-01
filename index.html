@@ -37,39 +37,64 @@
     <main class="main-container w-11/12 mx-auto grid grid-cols-4 gap-2 mt-4">
       <section class="col-span-3 bg-white rounded-xl">
         <div class="box-one-container grid grid-cols-4 gap-x-2 p-3">
-          <div class="flex items-center p-2 gap-2 bg-slate-300 rounded-lg">
-            <img class="h-5" src="./assets/checkbox.png" alt="" />
+          <div class="flex items-center p-2 gap-2 bg-[#F4F7FF] rounded-lg">
+            <div
+              class="bg-white rounded-full p-4 flex items-center justify-center"
+            >
+              <img class="h-5" src="./assets/checkbox.png" alt="" />
+            </div>
             <div>
               <h1>Task Assigned</h1>
-              <h1 id="assigned-task" class="font-bold">6</h1>
+              <h1 class="font-bold text-xl">
+                0<span id="assigned-task">6</span>
+              </h1>
             </div>
           </div>
+          <!-- part1 End -->
           <div
             class="flex items-center justify-center p-2 gap-2 bg-slate-300 rounded-lg col-span-2"
+            style="
+              background: linear-gradient(
+                130.7deg,
+                rgb(55, 82, 253) 0.419%,
+                rgb(108, 127, 250) 52.66%,
+                rgb(155, 168, 248) 99.733%
+              );
+            "
           >
             <img class="" src="./assets/board.png" alt="" />
             <div>
-              <h1>Discover something New Today!</h1>
+              <h1 class="text-white">Discover something New Today!</h1>
             </div>
           </div>
-          <div class="flex items-center p-2 gap-2 bg-slate-300 rounded-lg">
-            <img class="" src="./assets/calender.png" alt="" />
+          <!-- part-2 End -->
+          <div class="flex items-center p-2 gap-2 bg rounded-lg bg-[#F4F7FF]">
+            <div
+              class="bg-white rounded-full p-3 flex items-center justify-center"
+            >
+              <img class="" src="./assets/calender.png" alt="" />
+            </div>
+
             <h1 id="current-date"></h1>
           </div>
+          <!-- part-3 End -->
         </div>
-        <hr class="my-2" />
+        <hr class="border-dashed border-gray-400" />
         <div class="work-boxes grid grid-cols-3 grid-rows-2 p- gap-2 m-3">
           <!-- box-1 start -->
           <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
             <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
-            <h1 id="problem-one">Fix Mobile Button Issue</h1>
+            <h1 id="problem-one " class="text-xl font-semibold">
+              Fix Mobile Button Issue
+            </h1>
             <p class="bg-white p-3 rounded-lg">
               Debug using Chrome DevTools, check for overlapping ...
             </p>
+            <hr class="border-dashed border-gray-400" />
             <div class="flex items-center justify-between py-3">
               <div>
                 <h2>Deadline</h2>
-                <h1>21 March 2025</h1>
+                <h1 class="font-medium">21 March 2025</h1>
               </div>
               <button id="myButton-one" class="btn btn-primary text-white">
                 Completed
@@ -79,15 +104,16 @@
           <!-- box-1 end -->
           <!-- box-2 start -->
           <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
-            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
-            <h1>Fix Mobile Button Issue</h1>
+            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">CloudSync</h2>
+            <h1 class="text-xl font-semibold">Add Dark Mode</h1>
             <p class="bg-white p-3 rounded-lg">
-              Debug using Chrome DevTools, check for overlapping ...
+              Store the user's preference in localStorage, update CSS...
             </p>
+            <hr class="border-dashed border-gray-400" />
             <div class="flex items-center justify-between py-3">
               <div>
                 <h2>Deadline</h2>
-                <h1>21 March 2025</h1>
+                <h1 class="font-medium">21 March 2025</h1>
               </div>
               <button id="myButton-two" class="btn btn-primary text-white">
                 Completed
@@ -98,15 +124,16 @@
 
           <!-- box-3 start -->
           <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
-            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
-            <h1>Fix Mobile Button Issue</h1>
+            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">SwiftPay</h2>
+            <h1 class="text-xl font-semibold">Optimize Home page </h1>
             <p class="bg-white p-3 rounded-lg">
               Debug using Chrome DevTools, check for overlapping ...
             </p>
+            <hr class="border-dashed border-gray-400" />
             <div class="flex items-center justify-between py-3">
               <div>
                 <h2>Deadline</h2>
-                <h1>21 March 2025</h1>
+                <h1 class="font-medium">21 March 2025</h1>
               </div>
               <button id="myButton-three" class="btn btn-primary text-white">
                 Completed
@@ -116,15 +143,16 @@
           <!-- box-3 end -->
           <!-- box-4 start -->
           <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
-            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
-            <h1>Fix Mobile Button Issue</h1>
+            <h2 class="bg-white px-3 py-1 w-16 rounded-lg mt-3">Meta</h2>
+            <h1 class="text-xl font-semibold">Add new emoji 🤲</h1>
             <p class="bg-white p-3 rounded-lg">
               Debug using Chrome DevTools, check for overlapping ...
             </p>
+            <hr class="border-dashed border-gray-400" />
             <div class="flex items-center justify-between py-3">
               <div>
                 <h2>Deadline</h2>
-                <h1>21 March 2025</h1>
+                <h1 class="font-medium">21 March 2025</h1>
               </div>
               <button id="myButton-four" class="btn btn-primary text-white">
                 Completed
@@ -134,15 +162,16 @@
           <!-- box-4 end -->
           <!-- box-5 start -->
           <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
-            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
-            <h1>Fix Mobile Button Issue</h1>
+            <h2 class="bg-white px-3 py-1 w-28 rounded-lg mt-3">Google LLC</h2>
+            <h1 class="text-xl font-semibold">Integrate OpenAI API</h1>
             <p class="bg-white p-3 rounded-lg">
               Debug using Chrome DevTools, check for overlapping ...
             </p>
+            <hr class="border-dashed border-gray-400" />
             <div class="flex items-center justify-between py-3">
               <div>
                 <h2>Deadline</h2>
-                <h1>21 March 2025</h1>
+                <h1 class="font-medium">21 March 2025</h1>
               </div>
               <button id="myButton-five" class="btn btn-primary text-white">
                 Completed
@@ -152,15 +181,16 @@
           <!-- box-5 end -->
           <!-- box-6 start -->
           <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
-            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
-            <h1>Fix Mobile Button Issue</h1>
+            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">Glassdoar</h2>
+            <h1 class="text-xl font-semibold">Improve Job searching</h1>
             <p class="bg-white p-3 rounded-lg">
               Debug using Chrome DevTools, check for overlapping ...
             </p>
+            <hr class="border-dashed border-gray-400" />
             <div class="flex items-center justify-between py-3">
               <div>
                 <h2>Deadline</h2>
-                <h1>21 March 2025</h1>
+                <h1 class="font-medium">21 March 2025</h1>
               </div>
               <button id="myButton-six" class="btn btn-primary text-white">
                 Completed
@@ -182,7 +212,7 @@
             Clear History
           </button>
         </div>
-        <hr <hr class="my-2" />
+        <hr class="border-dashed border-gray-400 my-3" />
         <div id="history-container" class="w-11/12 mx-auto"></div>
       </section>
     </main>

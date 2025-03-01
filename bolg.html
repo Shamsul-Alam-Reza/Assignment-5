@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-300 py-4">
+    <nav class="flex justify-between w-11/12 mx-auto rounded-lg bg-white">
+      <div class="flex items-center m-4">
+        <img src="./assets/logo.png" alt="" />
+        <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <button class="btn btn-primary m-4">Back to Desk</button>
+    </nav>
+    <article class="my-10 w-11/12 mx-auto">
+      <h1 class="text-center text-3xl font-bold mb-10">Blogs</h1>
+      <div class="container space-y-3">
+        <div class="bg-white p-5">
+          <h1 class="font-bold">
+            Question-1:What are the different ways to select an element in the
+            DOM?
+          </h1>
+          <hr style="border: 1px dashed gray" class="my-5" />
+          <p>
+            There are some different ways to select an element in the DOM, some
+            of the most common ways are: <br />
+            getElementById() <br />
+            getElementsByClassName() <br />
+            getElementsByTagName() <br />
+            querySelector() querySelectorAll()
+          </p>
+        </div>
+        <div class="bg-white p-5">
+          <h1 class="font-bold">
+            Question-2:What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h1>
+          <hr style="border: 1px dashed gray" class="my-5" />
+          <p class="">
+            By using <span class="font-bold">innerHTML</span> we can get HTML
+            content inside an element, including any HTML tags. <br />
+            By using <span class="font-bold">innerText</span> we can get only
+            content inside an element, including any HTML tags. <br />
+            By using <span class="font-bold">textContent</span> we can get only
+            content inside an element, It’s almost similar to innerText .
+            Difference is By using textContent can get text from hidden
+            elements.
+          </p>
+        </div>
+        <div class="bg-white p-5">
+          <h1 class="font-bold">
+            Question-3:What is event delegation in the DOM?
+          </h1>
+          <hr style="border: 1px dashed gray" class="my-5" />
+          <p>
+            Delegation is a JavaScript technique where you attach a single event
+            listener to a parent element, allowing it to handle events triggered
+            on any of its child elements.
+          </p>
+        </div>
+        <div class="bg-white p-5">
+          <h1 class="font-bold">
+            Question-4: What is event bubbling in the DOM?
+          </h1>
+          <hr style="border: 1px dashed gray" class="my-5" />
+          <p>
+            Event bubbling is a process in the DOM where an event triggered on a
+            child element propagates upwards through its parent elements,
+            eventually reaching the root of the document
+          </p>
+        </div>
+        <div class="bg-white p-5">
+          <h1 class="font-bold">
+            Question-5:How do you create, add, and remove elements using
+            JavaScript?
+          </h1>
+          <hr style="border: 1px dashed gray" class="my-5" />
+          <p>
+            <span class="font-semibold">Create an element:</span> const element
+            = document.createElement('div');<br />
+            <span class="font-semibold">Add an element to the DOM:</span>
+            document.body.appendChild(element);
+            <br />
+            <span class="font-semibold">Remove an element from the DOM:</span>
+            element.remove();
+          </p>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMeeter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-600 py-3">
+    <nav
+      class="flex justify-between w-11/12 mx-auto rounded-lg bg-white items-center"
+    >
+      <div class="flex items-center m-4">
+        <img src="./assets/logo.png" alt="" />
+        <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <div class="flex gap-x-5 items-center">
+        <div
+          class="bg-gray-300 flex items-end w-20 px-5 py-2 rounded-full gap-x-2"
+        >
+          <img class="w-[50%]" src="./assets/checkbox.png" alt="" />
+          <h1 id="com-task" class="font-bold">23</h1>
+        </div>
+        <div
+          class="mr-5 bg-gray-300 flex items-center justify-center rounded-full"
+          onclick="changeBackground()"
+        >
+          <img class="w-[96%] p-1" src="./assets/theme-btn.png" alt="" />
+        </div>
+      </div>
+    </nav>
+    <main class="main-container w-11/12 mx-auto grid grid-cols-4 gap-2 mt-4">
+      <section class="col-span-3 bg-white rounded-xl">
+        <div class="box-one-container grid grid-cols-4 gap-x-2 p-3">
+          <div class="flex items-center p-2 gap-2 bg-slate-300 rounded-lg">
+            <img class="h-5" src="./assets/checkbox.png" alt="" />
+            <div>
+              <h1>Task Assigned</h1>
+              <h1 id="assigned-task" class="font-bold">6</h1>
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center p-2 gap-2 bg-slate-300 rounded-lg col-span-2"
+          >
+            <img class="" src="./assets/board.png" alt="" />
+            <div>
+              <h1>Discover something New Today!</h1>
+            </div>
+          </div>
+          <div class="flex items-center p-2 gap-2 bg-slate-300 rounded-lg">
+            <img class="" src="./assets/calender.png" alt="" />
+            <h1 id="current-date"></h1>
+          </div>
+        </div>
+        <hr class="my-2" />
+        <div class="work-boxes grid grid-cols-3 grid-rows-2 p- gap-2 m-3">
+          <!-- box-1 start -->
+          <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
+            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
+            <h1 id="problem-one">Fix Mobile Button Issue</h1>
+            <p class="bg-white p-3 rounded-lg">
+              Debug using Chrome DevTools, check for overlapping ...
+            </p>
+            <div class="flex items-center justify-between py-3">
+              <div>
+                <h2>Deadline</h2>
+                <h1>21 March 2025</h1>
+              </div>
+              <button id="myButton-one" class="btn btn-primary text-white">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- box-1 end -->
+          <!-- box-2 start -->
+          <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
+            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
+            <h1>Fix Mobile Button Issue</h1>
+            <p class="bg-white p-3 rounded-lg">
+              Debug using Chrome DevTools, check for overlapping ...
+            </p>
+            <div class="flex items-center justify-between py-3">
+              <div>
+                <h2>Deadline</h2>
+                <h1>21 March 2025</h1>
+              </div>
+              <button id="myButton-two" class="btn btn-primary text-white">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- box-2 end -->
+
+          <!-- box-3 start -->
+          <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
+            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
+            <h1>Fix Mobile Button Issue</h1>
+            <p class="bg-white p-3 rounded-lg">
+              Debug using Chrome DevTools, check for overlapping ...
+            </p>
+            <div class="flex items-center justify-between py-3">
+              <div>
+                <h2>Deadline</h2>
+                <h1>21 March 2025</h1>
+              </div>
+              <button id="myButton-three" class="btn btn-primary text-white">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- box-3 end -->
+          <!-- box-4 start -->
+          <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
+            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
+            <h1>Fix Mobile Button Issue</h1>
+            <p class="bg-white p-3 rounded-lg">
+              Debug using Chrome DevTools, check for overlapping ...
+            </p>
+            <div class="flex items-center justify-between py-3">
+              <div>
+                <h2>Deadline</h2>
+                <h1>21 March 2025</h1>
+              </div>
+              <button id="myButton-four" class="btn btn-primary text-white">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- box-4 end -->
+          <!-- box-5 start -->
+          <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
+            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
+            <h1>Fix Mobile Button Issue</h1>
+            <p class="bg-white p-3 rounded-lg">
+              Debug using Chrome DevTools, check for overlapping ...
+            </p>
+            <div class="flex items-center justify-between py-3">
+              <div>
+                <h2>Deadline</h2>
+                <h1>21 March 2025</h1>
+              </div>
+              <button id="myButton-five" class="btn btn-primary text-white">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- box-5 end -->
+          <!-- box-6 start -->
+          <div class="space-y-2 bg-[#F4F7FF] p-3 rounded-xl">
+            <h2 class="bg-white px-3 py-1 w-24 rounded-lg mt-3">ShopEase</h2>
+            <h1>Fix Mobile Button Issue</h1>
+            <p class="bg-white p-3 rounded-lg">
+              Debug using Chrome DevTools, check for overlapping ...
+            </p>
+            <div class="flex items-center justify-between py-3">
+              <div>
+                <h2>Deadline</h2>
+                <h1>21 March 2025</h1>
+              </div>
+              <button id="myButton-six" class="btn btn-primary text-white">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- box-6 end -->
+        </div>
+      </section>
+      <section class="bg-white rounded-xl">
+        <div
+          class="flex items-center justify-center my-5 gap-3 mx-auto text-center"
+        >
+          <img src="./assets/activity.png" alt="" />
+          <h1>Activity Log</h1>
+        </div>
+        <div class="flex justify-center">
+          <button id="clearButton" class="btn btn-primary text-white">
+            Clear History
+          </button>
+        </div>
+        <hr <hr class="my-2" />
+        <div id="history-container" class="w-11/12 mx-auto"></div>
+      </section>
+    </main>
+  </body>
+</html>

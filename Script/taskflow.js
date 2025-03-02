@@ -38,6 +38,19 @@ document
 
     let historyElement = document.getElementById("history-container");
     let p = document.createElement("p");
+
+    const currentTime = new Date();
+    let hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    // Convert hours from 24-hour format to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    const times = `${hours}:${minutes}:${seconds} ${ampm}`;
+
     p.innerText = `You have completed the task ${problemTitle} at ${times}`;
     p.style.margin = "10px";
     p.style.padding = "10px";
@@ -79,6 +92,19 @@ document
 
     let historyElement = document.getElementById("history-container");
     let p = document.createElement("p");
+
+    const currentTime = new Date();
+    let hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    // Convert hours from 24-hour format to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    const times = `${hours}:${minutes}:${seconds} ${ampm}`;
+
     p.innerText = `You have completed the task ${problemTitle} at ${times}`;
     p.style.margin = "10px";
     p.style.padding = "10px";
@@ -120,6 +146,19 @@ document
 
     let historyElement = document.getElementById("history-container");
     let p = document.createElement("p");
+
+    const currentTime = new Date();
+    let hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    // Convert hours from 24-hour format to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    const times = `${hours}:${minutes}:${seconds} ${ampm}`;
+
     p.innerText = `You have completed the task ${problemTitle} at ${times}`;
     p.style.margin = "10px";
     p.style.padding = "10px";
@@ -162,6 +201,19 @@ document
 
     let historyElement = document.getElementById("history-container");
     let p = document.createElement("p");
+
+    const currentTime = new Date();
+    let hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    // Convert hours from 24-hour format to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    const times = `${hours}:${minutes}:${seconds} ${ampm}`;
+
     p.innerText = `You have completed the task ${problemTitle} at ${times}`;
     p.style.margin = "10px";
     p.style.padding = "10px";
@@ -203,6 +255,19 @@ document
 
     let historyElement = document.getElementById("history-container");
     let p = document.createElement("p");
+
+    const currentTime = new Date();
+    let hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    // Convert hours from 24-hour format to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    const times = `${hours}:${minutes}:${seconds} ${ampm}`;
+
     p.innerText = `You have completed the task ${problemTitle} at ${times}`;
     p.style.margin = "10px";
     p.style.padding = "10px";
@@ -245,6 +310,19 @@ document
 
     let historyElement = document.getElementById("history-container");
     let p = document.createElement("p");
+
+    const currentTime = new Date();
+    let hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    // Convert hours from 24-hour format to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+
+    const times = `${hours}:${minutes}:${seconds} ${ampm}`;
+
     p.innerText = `You have completed the task ${problemTitle} at ${times}`;
     p.style.margin = "10px";
     p.style.padding = "10px";
